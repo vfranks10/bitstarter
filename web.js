@@ -4,10 +4,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(fs.writeFile('index.html', funtion(err){
-    if(err) throw err;
-      console.log("It's saved!");
-  });
+  response.send('Hello World from index.html');
 });
 
 var port = process.env.PORT || 5000;
