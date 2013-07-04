@@ -1,10 +1,10 @@
 var express = require('express');
-var buffer = new buffer('index.html');
+
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(fs.writeFile(buffer, funtion(err){
+  response.send(fs.writeFile('index.html', funtion(err){
     if(err) throw err;
       console.log("It's saved!");
   });
