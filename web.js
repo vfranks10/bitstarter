@@ -1,9 +1,7 @@
-
 var express = require('express');
 var fs = require('fs');
 
 var out = fs.readFile('index.html');
-
 
 var app = express.createServer(express.logger());
 
