@@ -1,0 +1,145 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install', '-g', 'jshint' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/ubuntu/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose cache add [ 'jshint', null ]
+silly cache add: name, spec, args [ undefined, 'jshint', [ 'jshint', null ] ]
+verbose parsed url { pathname: 'jshint', path: 'jshint', href: 'jshint' }
+verbose addNamed [ 'jshint', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'jshint', '', false ]
+verbose raw, before any munging jshint
+verbose url resolving [ 'https://registry.npmjs.org/', './jshint' ]
+verbose url resolved https://registry.npmjs.org/jshint
+verbose etag "AQ1WERZA7X0BK6NCRZHF1RHAU"
+http GET https://registry.npmjs.org/jshint
+http 304 https://registry.npmjs.org/jshint
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+silly get cb     etag: '"AQ1WERZA7X0BK6NCRZHF1RHAU"',
+silly get cb     date: 'Fri, 09 Aug 2013 02:56:34 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag jshint from cache
+silly name, range, hasData 2 [ 'jshint', '', true ]
+silly versions [ 'jshint',
+silly versions   [ '0.1.8',
+silly versions     '0.1.9',
+silly versions     '0.2.0',
+silly versions     '0.2.1',
+silly versions     '0.2.2',
+silly versions     '0.2.3',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.4.0',
+silly versions     '0.5.0',
+silly versions     '0.5.1',
+silly versions     '0.5.2',
+silly versions     '0.5.3',
+silly versions     '0.5.4',
+silly versions     '0.5.5',
+silly versions     '0.5.6',
+silly versions     '0.5.7',
+silly versions     '0.5.8',
+silly versions     '0.5.9',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.6.2',
+silly versions     '0.6.3',
+silly versions     '0.7.0',
+silly versions     '0.7.1',
+silly versions     '0.7.2',
+silly versions     '0.7.3',
+silly versions     '0.8.0',
+silly versions     '0.8.1',
+silly versions     '0.8.2',
+silly versions     '0.9.0',
+silly versions     '0.9.1',
+silly versions     '1.0.0',
+silly versions     '1.1.0',
+silly versions     '2.0.0',
+silly versions     '2.0.1',
+silly versions     '2.1.0',
+silly versions     '2.1.1',
+silly versions     '2.1.2',
+silly versions     '2.1.3',
+silly versions     '2.1.4',
+silly versions     '2.1.5',
+silly versions     '2.1.6',
+silly versions     '2.1.7',
+silly versions     '2.1.8',
+silly versions     '2.1.9' ] ]
+verbose bin dist [ '0.6-ares1.7.5-evundefined-openssl1.0.1-v83.7.12.22-linux-x64-3.2.0-40-virtual',
+verbose bin dist   { shasum: '65cdbb2302cbf27e45db0066669b5d5e74f66465',
+verbose bin dist     tarball: 'http://registry.npmjs.org/jshint/-/jshint-2.1.9.tgz' } ]
+verbose caching /home/ubuntu/.npm/jshint/2.1.9/package/package.json
+verbose loadDefaults jshint@2.1.9
+silly resolved [ { name: 'jshint',
+silly resolved     version: '2.1.9',
+silly resolved     homepage: 'http://jshint.com/',
+silly resolved     description: 'Static analysis tool for JavaScript',
+silly resolved     author: 
+silly resolved      { name: 'Anton Kovalyov',
+silly resolved        email: 'anton@kovalyov.net',
+silly resolved        url: 'http://anton.kovalyov.net/' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/jshint/jshint.git' },
+silly resolved     bugs: { url: 'https://github.com/jshint/jshint/issues' },
+silly resolved     bin: { jshint: './bin/jshint' },
+silly resolved     scripts: 
+silly resolved      { build: 'node make.js build',
+silly resolved        test: 'nodeunit tests tests/stable/regression tests/stable/unit',
+silly resolved        pretest: 'jshint --config=jshint.json src' },
+silly resolved     main: './src/stable/jshint.js',
+silly resolved     dependencies: 
+silly resolved      { shelljs: '0.1.x',
+silly resolved        underscore: '1.4.x',
+silly resolved        cli: '0.4.x',
+silly resolved        minimatch: '0.x.x',
+silly resolved        'console-browserify': '0.1.x' },
+silly resolved     devDependencies: 
+silly resolved      { jshint: '2.1.x',
+silly resolved        shelljs: '0.1.x',
+silly resolved        browserify: '2.12.x',
+silly resolved        coveraje: '0.2.x',
+silly resolved        nodeunit: '0.8.x',
+silly resolved        sinon: '1.7.x' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'https://github.com/jshint/jshint/blob/master/LICENSE' } ],
+silly resolved     preferGlobal: true,
+silly resolved     files: [ 'bin', 'src' ],
+silly resolved     _id: 'jshint@2.1.9',
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.12',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'jshint' } ]
+info into /usr/local/lib jshint@2.1.9
+info installOne jshint@2.1.9
+verbose from cache /home/ubuntu/.npm/jshint/2.1.9/package/package.json
+info unbuild /usr/local/lib/node_modules/jshint
+verbose mkdir (expected) error ENOENT, no such file or directory '/usr/local/lib/node_modules'
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /usr/local/lib/node_modules/jshint
+ERR! Could not create /usr/local/lib/node_modules/___jshint.npm
+ERR! error installing jshint@2.1.9
+info unbuild /usr/local/lib/node_modules/jshint
+verbose installOne cb jshint@2.1.9
+ERR! Error: EACCES, permission denied '/usr/local/lib/node_modules'
+ERR! 
+ERR! Please try running this command again as root/Administrator.
+ERR! 
+ERR! System Linux 3.2.0-40-virtual
+ERR! command "node" "/usr/bin/npm" "install" "-g" "jshint"
+ERR! cwd /home/ubuntu/bitstarter
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! path /usr/local/lib/node_modules
+ERR! code EACCES
+ERR! message EACCES, permission denied '/usr/local/lib/node_modules'
+ERR! errno {}
+verbose exit [ 1, true ]

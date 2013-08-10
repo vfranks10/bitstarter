@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Help Build KCAT!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <style rel="stylesheet" >
+     /* Large Desktop */
+      @media(min-width:980px){
+        body{padding-top:60px}
+        .linediv-l{
+          border-right:1px white solid;
+        }
+        .linediv-r{
+          border-left:1px white solid;  
+        }
+      } 
+
+      /* Landscape phones and down */
+      @media(max-width:480px){
+        .copy{
+          padding: 2.5% 10%; 
+        }
+        .linediv-l{
+          border-bottom:1px white solid;
+        }
+        .linediv-r{
+          border-top:1px white solid;
+        }
+      } 
+
+      /* All form factors */
+   
+      /* Main body and headings */
+      body{
+        font-family:'Open Sans', Helvetica, Arial, sans-serif;
+        background: rgb(255, 255, 255);
+        background: -moz-linear-gradient(30deg, rgb(255, 255, 255) 15%, rgb(90, 203, 250) 76%);
+        background: -webkit-linear-gradient(30deg, rgb(255, 255, 255) 15%, rgb(90, 203, 250) 76%);
+        background: -o-linear-gradient(30deg, rgb(255, 255, 255) 15%, rgb(90, 203, 250) 76%);
+        background: -ms-linear-gradient(30deg, rgb(255, 255, 255) 15%, rgb(90, 203, 250) 76%);
+        background: linear-gradient(120deg, rgb(255, 255, 255) 15%, rgb(90, 203, 250) 76%);
+
+ 
+      }
+      .heading, .subheading{
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      p.lead{
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size:18px;
+        line-height: 24px; 
+      }
+      h3.statistics, p.statistics{
+        font-size:16px;
+      }
+      /* Video pitch and action */
+      .pitch{
+        padding:2.5% 0%;
+      }
+      .order{
+        padding:2% 0%;
+      }
+      .actions{
+        background-color: #343434;
+        padding:3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics{
+        text-align: center;
+      }
+      .statistics h3, .statistics p{
+        color:white;
+      }    
+     
+      /* Marketing Copy and Footer */
+      .copy{
+        padding-top: 2.5%;
+        padding-bottom: 2.5%
+        text-align: justify;
+      }
+      .asset{
+        padding: 2.5% 0%;
+      }
+      .footer{
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p{
+        font-size: 11px;
+      }
+      .footer a{
+        color: #ccccff;
+      }
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+      div.addthis_toolbox {
+       width:180px;
+       margin: 0 auto;
+      } 
+    </style>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42865673-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>  
+    </head>
+  <body>
+  
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">K-CAT</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#"><i class='icon-home'></i> Home</a></li>
+              <li><a href="#about"><i class='icon-user'></i> About</a></li>
+              <li><a href="#contact"><i class='icon-search'></i> Contact</a></li>
+            </ul>
+          </div> <!-- /.nav-collapse -->
+        </div>  
+      </div>  
+    </div>  
+
+    <!-- We use row-fluid inside containers to acheive a resizable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
+    <div class="container">
+        <!-- Font and paired font of .heading/ .subheading and body from Google Fonts -->
+        <!-- www.google.com/fonts/specimen/Ubuntu -->
+        <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+        <div class="row-fluid heading">
+          <div class="span12">
+            <h1>Building the Center for Art and Technology</h1>
+          </div>
+        </div>
+        <div class="row-fluid subheading">
+          <div class="span12">
+            <!-- Special typography from Bootstrap for lead paragraph. -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+            <p class="lead">Making the impossible possible!</p>
+          </div>
+        </div>
+       
+        <div class="row-fluid pitch">
+          <div class="span5 offset1 video">
+            <img class="img-polaroid" src="http://placehold.it/480x300">
+          </div>
+       
+          <!-- We define a new 'actions' div to contain statistics, order and share buttons. -->          
+          <div class="span5 actions">
+            <div class="span10 offset1">
+              <div class="statistics">
+                <div class="span4">
+                  <!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts
+                  illustrating media queries  -->
+                  <div class="linediv-l">
+                    <h3>1</h3><p>backers</p>
+                  </div>
+                </div>      
+                <div class="span4">
+                  <div class="linediv-c">
+                    <h3>$0</h3><p>of $150,000</p>
+                  </div>
+                </div>
+                <div class="span4">
+                  <div class="linediv-r">
+                    <h3>90</h3><p>days left</p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="span10 offset1 ">
+              <!-- Bootstrap progress bar -->
+              <!-- http://twitter.github.io/bootstrap/components.html#progress  -->     
+              <div class="thermometer progress active">
+                <div class="bar bar-success" style="width:0%;"></div>
+                <div class="bar bar-warning" style="width:100%;"></div>
+              </div>
+          </div>    
+           <div class="span6 offset3 order">
+            <!-- Standard Bootstrap button. --> 
+            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+            <a class="coinbase-button" 
+               data-button-style="custom_large"
+	       data-button-text="Order with Bitcoin"
+               data-code="78dbf2a2c6ab973919392eb5050086ff" 
+               data-button-style="donation_large" 
+               href="https://coinbase.com/checkouts/78dbf2a2c6ab973919392eb5050086ff">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>            
+
+          </div>
+          <div class="span8 offset2 social">  
+            <!-- Social buttons are not included in default Bootstrap. -->
+            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons --> 
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+              <a class="addthis_button_preferred_1"></a>
+              <a class="addthis_button_preferred_2"></a>
+              <a class="addthis_button_compact"></a>
+              <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fee9091925eba6"></script>
+           <!-- AddThis Button END -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- Beyond this part the marketing copy begins. -->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+      <!-- http://placehold.it --> 
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+        <div class="span5 copy">
+        <h4>First Tier: $1 Shoutout!</h4>
+          <p>
+            For your support we will, you will recieve recognition on our website. 
+            A great way to keep track of our progress and let your friends know that 
+            you support our cause.
+          </p>
+        </div>
+      </div>      
+
+       <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <h4>Second Tier: $25 Certificate</h4>
+          <p>
+           For your endorsement at this level we will, send you an electronic
+           certificate showing that you were involved with this project.  
+          </p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+      </div>   
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+        <div class="span5 copy">
+        <h4>Third Tier: $100 Making the impossible possible by Bill Strickland Book!</h4>
+          <p>
+           For your support at this level in addition to the other rewards you will
+           also recieve a copy of Bill Strickland's book Making the Impossible Possible.
+           This is the main inspiration behind this project, and Bill will inspire you to
+           do more great things also. 
+          </p>
+        </div>
+      </div>      
+
+       <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <h4>Fourth Tier: $200 Brick</h4>
+          <p>
+            When the center is built. You will be remembered forever with this
+            commemoritive brick that will always be apart of it.
+          </p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+      </div> 
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+        <div class="span5 copy">
+        <h4>Fifth Tier: $500 Wall Memorial!</h4>
+          <p>
+            You will part of donor memorial and will be forever recognized
+            as one of the individuals who made this center possible. 
+          </p>
+        </div>
+      </div>      
+
+       <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <h4>Sixth Tier: $1,000 Founder's Square</h4>
+          <p>
+            Being part of this elite group you will be remembered as one of the
+            people who made this center possible. 
+          </p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+      </div>     
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" src="http://placehold.it/480x300">
+        </div>
+        <div class="span5 copy">
+        <h4>Seventh Tier: $5,000 Classroom Memorial!</h4>
+          <p>
+            For your gracious support at this level commemorate one our 
+            classrooms with your name. You will always be associated with
+            the good things that happen there. 
+          </p>
+        </div>
+      </div>      
+      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. --> 
+      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->      
+      <div class="row-fluid faq">
+        <div class="span10 offset1">
+          <h3>FAQ</h3>
+          <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                  What is the Center for Art and Technology?
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  A place of learning. We will provide an enriching environment for young adults to explore and
+                  grow. In addition there will be an adult education program to help people gain skills for in-
+                  demand careers. We are working with employers to make sure that these skills will be put to use
+                  upon graduation. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                  Why a Center for Art and Technology?
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  This center is going to be a place for school children to explore as well as an adult
+                  education program.
+                </div>
+              </div>    
+            </div>
+          </div>
+         </div>
+      </div> 
+
+
+      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+      <!-- http://creativecommons.org/license/ -->
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p> This work is licensed under the 
+            <a href="http://creativecommons.org/license/by-sa/3.0/">CC By-SA 3.0</a>,
+            without all the cruft that would otherwise be put at the bottom of the page.</p>
+        </div>
+      </div>
+    </div> -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42865673-1', 'kzoocat.org');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>                      
+OB
